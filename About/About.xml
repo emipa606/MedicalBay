@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Medical bay (Continued)</name>
+  <packageId>Mlie.MedicalBay</packageId>
+  <author>Gouda quiche</author>
+  <url>https://github.com/emipa606/MedicalBay</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+    <li>1.5</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of Gouda quiches mod https://steamcommunity.com/sharedfiles/filedetails/?id=2101075718
+
+- Added wildcard support for the filth-cleaner. Should clean all new types of filth now.
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr][td][url=https://dsc.gg/mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td] [td][url=https://github.com/emipa606/MedicalBay][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[img]https://i.imgur.com/9Bu9Lem.png[/img]
+[img]https://vignette.wikia.nocookie.net/ftl/images/0/0f/MedbayCircle.png/revision/latest?cb=20150924212116[/img] A medical bay that will tend and regenerate every unit in a room. It will reduce scares and is configurable to sort out people you would not like to waste your medifuel on.
+
+[img]https://i.imgur.com/CVlgJM7.png[/img]
+[*][h2]Medbay[/h2]
+[list]
+[*]The medbay needs to be filled with Medifuel to work, it's not free.
+[*]There are settings that could prevent from being healed : check them.
+[*]The medbay does not heal at 100% if all the conditions are not met. There is a log button that shows you the statistics and what it relies on (medbay building quality and placebo effect that can be increased by having more therapeutic walls, aka walls made of medistone)
+[/list]
+[*][h2]Filth compressor[/h2]
+[list]
+[*]If placed in a room that contains draining tiles, it will make filth disappear
+[*]The more draining tiles there are in the room, the faster the filth disappears, but it will increase chemfuel consumption
+[*]If the filth is far from the draining tile, it will increase the chemfuel consumption
+[/list]
+[*][h2]Draining tiles[/h2]
+[list]
+[*]In combination with a filth compressor, it will keep a room clean at the cost of some chemfuel
+[/list]
+[/list]
+
+[img]https://i.imgur.com/j65fgqS.png[/img]
+[list]
+[*][h2]Medifuel[/h2]
+[list]
+[*]It constitutes an average quality medicine when used alone.
+[*]Its main purpose is to fuel the medbay. 
+[*]Its recipe relies on megaspider meat, fuel and healroot
+[*]Some more advanced researches will unlock a recipe with regular meat.
+[/list]
+[*][h2]Medistone[/h2]
+[list]
+[*]This raw ressource is required to construct a medbay.
+[*]It's made out of regular stone chunks and medifuel.
+[*]You can build walls that have a relaxing effect on patients when used in conjonction with the medbay. It provokes a placebo effect and enhance the medbay effects.
+[*]Beds and doors made out of it also have interesting qualities.
+[/list]
+[/list]
+
+[img]https://i.imgur.com/9kOXMXt.png[/img]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2141101865]Zoltan A, the adjudicator[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2203002421]Mantis B, the basilisk[/url]
+[/list]
+
+[img]https://i.imgur.com/mPn1G3B.png[/img]
+[list]
+[*][b]Dr. Force A Failure[/b], for his feedback
+[*][b]GenomX[/b] for sharing his medistone texture with me
+[*]Special Thanks to [b]Mlie[/b] for the 1.3 update.
+[*][b]Ness[/b], for bug report
+[/list]
+
+[h1]Discussion thread[/h1]
+[list]
+[*]https://ludeon.com/forums/index.php?topic=37908.0
+[/list]
+
+[url=https://ko-fi.com/goudaquiche][img]https://i.imgur.com/R3wxkQW.png[/img][/url]
+
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
+[/list]</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+</ModMetaData>
