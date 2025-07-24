@@ -12,10 +12,10 @@ public class WaitingRoom
 
     public readonly Comp_LTF_MedBay ParentComp;
 
-    public readonly ICollection<Pawn> RoomPawns = new List<Pawn>();
+    private readonly ICollection<Pawn> RoomPawns = new List<Pawn>();
     public float calculatedMaxRegen;
 
-    public FloatRange calculatedTendingQualityRange = new FloatRange(0f, 0f);
+    public FloatRange calculatedTendingQualityRange = new(0f, 0f);
 
     private int DrainingTilesNum;
 
@@ -29,7 +29,7 @@ public class WaitingRoom
 
     private int PlaceboWallsNum;
 
-    public Room room;
+    private Room room;
 
     private int WallsNum;
 
@@ -53,14 +53,14 @@ public class WaitingRoom
 
     private bool debug => ParentComp.processDebug;
 
-    public float CalculateMaxRegen => ParentComp.Props.regenMax + MaxRegenMedbayQualityFactor + MaxRegenPlaceboFactor;
+    private float CalculateMaxRegen => ParentComp.Props.regenMax + MaxRegenMedbayQualityFactor + MaxRegenPlaceboFactor;
 
-    public float MaxRegenMedbayQualityFactor =>
+    private float MaxRegenMedbayQualityFactor =>
         ParentComp.Props.regenMaxQualityOffset * Tools.QualityFactor(ParentComp.qualityComp.Quality);
 
-    public float MaxRegenPlaceboFactor => ParentComp.Props.regenMaxPlaceboOffset * PlaceboWallsRatio;
+    private float MaxRegenPlaceboFactor => ParentComp.Props.regenMaxPlaceboOffset * PlaceboWallsRatio;
 
-    public FloatRange CalculateTendingQualityRange
+    private FloatRange CalculateTendingQualityRange
     {
         get
         {
@@ -72,10 +72,10 @@ public class WaitingRoom
         }
     }
 
-    public float CalculateTendingQualityMedbayQualityFactor => Tools.QualityFactor(ParentComp.qualityComp.Quality) *
-                                                               ParentComp.Props.tendingQualityQualityOffset;
+    private float CalculateTendingQualityMedbayQualityFactor => Tools.QualityFactor(ParentComp.qualityComp.Quality) *
+                                                                ParentComp.Props.tendingQualityQualityOffset;
 
-    public FloatRange TheoricalTendingQualityRange
+    private FloatRange TheoricalTendingQualityRange
     {
         get
         {
@@ -122,7 +122,7 @@ public class WaitingRoom
 
     public bool InvalidRoom => !ValidRoom;
 
-    public int RoomPawnsCount => RoomPawns.EnumerableNullOrEmpty() ? 0 : RoomPawns.Count;
+    private int RoomPawnsCount => RoomPawns.EnumerableNullOrEmpty() ? 0 : RoomPawns.Count;
 
     public int PotentialPatientCount
     {
@@ -165,7 +165,7 @@ public class WaitingRoom
         }
     }
 
-    public IEnumerable<Pawn> PotentialPatients => TendablePawns.Union(RegenerablePawns);
+    private IEnumerable<Pawn> PotentialPatients => TendablePawns.Union(RegenerablePawns);
 
     private bool HasHealingRequest => MyHealingManager.HasRequest;
 
@@ -200,7 +200,7 @@ public class WaitingRoom
         calculatedTendingQualityRange = CalculateTendingQualityRange;
     }
 
-    public void NoRoomStats()
+    private void NoRoomStats()
     {
         DrainingTilesNum = PlaceboWallsNum = NonPlaceboWallsNum = 0;
         LastScore = 0f;
@@ -211,7 +211,7 @@ public class WaitingRoom
         return LastScore != BuildingTools.AgregatedScore(room);
     }
 
-    public void DeleteGonePawns(bool localDebug = false)
+    private void DeleteGonePawns(bool localDebug = false)
     {
         var list = new List<Pawn>();
         if (!RoomPawns.EnumerableNullOrEmpty())
@@ -325,7 +325,7 @@ public class WaitingRoom
         }
     }
 
-    public void AddNewPawns(bool localDebug = false)
+    private void AddNewPawns(bool localDebug = false)
     {
         foreach (var cell in room.Cells)
         {
@@ -383,7 +383,7 @@ public class WaitingRoom
         return true;
     }
 
-    public void UpdateRoomComposition(Comp_LTF_MedBay compMB)
+    private void UpdateRoomComposition(Comp_LTF_MedBay compMB)
     {
         var processDebug = compMB.processDebug;
         Tools.Warn(">>> Entering UpdateRoomComposition", processDebug);

@@ -5,11 +5,11 @@ namespace LTF_MedBay;
 
 public class ITab_MedBay_Utility
 {
-    public static readonly Vector2 WinSize = new Vector2(420f, 610f);
+    public static readonly Vector2 WinSize = new(420f, 610f);
 
-    public static readonly Rect WinScrollable = new Rect(0f, 0f, WinSize.x, WinSize.y);
+    public static readonly Rect WinScrollable = new(0f, 0f, WinSize.x, WinSize.y);
 
-    public static readonly Rect WinInnerScrollable = new Rect(0f, 0f, WinScrollable.width - 16f, WinScrollable.height);
+    public static readonly Rect WinInnerScrollable = new(0f, 0f, WinScrollable.width - 16f, WinScrollable.height);
 
     private static Vector2 scrollPosition = Vector2.zero;
 

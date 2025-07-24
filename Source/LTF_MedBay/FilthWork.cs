@@ -6,9 +6,9 @@ public class FilthWork
 {
     public readonly Thing Filth;
 
-    public readonly int WorkBase = 10;
+    private readonly int WorkBase = 10;
 
-    public int WorkAmount;
+    private int WorkAmount;
 
     public FilthWork(Thing filth)
     {

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make medifuel x10 alt -->
+  <Make_10xMedifuel_alt.label>make medifuel x10 alt</Make_10xMedifuel_alt.label>
+  <!-- EN: An alternative medifuel recipe to produce 10 units at a time. -->
+  <Make_10xMedifuel_alt.description>An alternative medifuel recipe to produce 10 units at a time.</Make_10xMedifuel_alt.description>
+  <!-- EN: Refining medifuel x10 -->
+  <Make_10xMedifuel_alt.jobString>Refining medifuel x10</Make_10xMedifuel_alt.jobString>
+  <!-- EN: make medifuel x50 alt -->
+  <Make_50xMedifuel_alt.label>make medifuel x50 alt</Make_50xMedifuel_alt.label>
+  <!-- EN: An alternative medifuel recipe to produce 50 units at a time. \n\nThe 50x bulk production compared to the 10x alternative recipe, grants :\n+10% productivity gain\n-10% ingredient cost. -->
+  <Make_50xMedifuel_alt.description>An alternative medifuel recipe to produce 50 units at a time. 
+
+The 50x bulk production compared to the 10x alternative recipe, grants :
++10% productivity gain
+-10% ingredient cost.</Make_50xMedifuel_alt.description>
+  <!-- EN: Refining medifuel x50 -->
+  <Make_50xMedifuel_alt.jobString>Refining medifuel x50</Make_50xMedifuel_alt.jobString>
+</LanguageData>

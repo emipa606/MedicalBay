@@ -8,7 +8,7 @@ namespace LTF_MedBay;
 [StaticConstructorOnStartup]
 public class Comp_LTF_FilthCompressor : ThingComp
 {
-    public Building building;
+    private Building building;
 
     private List<IntVec3> DrainingTilesPosList;
 
@@ -20,17 +20,17 @@ public class Comp_LTF_FilthCompressor : ThingComp
 
     private float lastRoomScore;
 
-    public Room MyRoom;
+    private Room MyRoom;
 
-    public CompPowerTrader powerComp;
+    private CompPowerTrader powerComp;
 
-    public bool processDebug;
+    private bool processDebug;
 
     public CompRefuelable refuelableComp;
 
     public CompProperties_LTF_FilthCompressor Props => (CompProperties_LTF_FilthCompressor)props;
 
-    public bool CheckCompressor
+    private bool CheckCompressor
     {
         get
         {
@@ -62,7 +62,7 @@ public class Comp_LTF_FilthCompressor : ThingComp
         }
     }
 
-    public bool ValidRoom
+    private bool ValidRoom
     {
         get
         {
@@ -75,11 +75,11 @@ public class Comp_LTF_FilthCompressor : ThingComp
         }
     }
 
-    public bool InvalidRoom => !ValidRoom;
+    private bool InvalidRoom => !ValidRoom;
 
-    public bool HasPowerOn => powerComp is { PowerOn: true };
+    private bool HasPowerOn => powerComp is { PowerOn: true };
 
-    public bool IsPowered
+    private bool IsPowered
     {
         get
         {
@@ -97,13 +97,13 @@ public class Comp_LTF_FilthCompressor : ThingComp
         }
     }
 
-    public bool HasFilth => !FilthList.NullOrEmpty();
+    private bool HasFilth => !FilthList.NullOrEmpty();
 
-    public bool HasDrainTiles => !DrainingTilesPosList.NullOrEmpty();
+    private bool HasDrainTiles => !DrainingTilesPosList.NullOrEmpty();
 
-    public bool HasWhatItTakes => HasFilth && HasDrainTiles;
+    private bool HasWhatItTakes => HasFilth && HasDrainTiles;
 
-    public void RefuelableInit()
+    private void RefuelableInit()
     {
         if ((refuelableComp = building.SetRefuelable(processDebug)) == null)
         {
@@ -111,7 +111,7 @@ public class Comp_LTF_FilthCompressor : ThingComp
         }
     }
 
-    public void PowerInit()
+    private void PowerInit()
     {
         if ((powerComp = building.SetPower(processDebug)) == null)
         {

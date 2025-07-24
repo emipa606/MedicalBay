@@ -24,7 +24,7 @@ public static class Tools
         return $"{debug}->{!debug}";
     }
 
-    public static bool TrueEveryNSec(int nTicks)
+    private static bool TrueEveryNSec(int nTicks)
     {
         return Find.TickManager.TicksGame % nTicks == 0;
     }

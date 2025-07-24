@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: medistone blocks -->
+  <LTF_BlocksMediStone.label>medistone blocks</LTF_BlocksMediStone.label>
+  <!-- EN: Blocks of solid medistone. Medistone is a midly hard stone. -->
+  <LTF_BlocksMediStone.description>Blocks of solid medistone. Medistone is a midly hard stone.</LTF_BlocksMediStone.description>
+  <!-- EN: Therapeutic -->
+  <LTF_BlocksMediStone.stuffProps.stuffAdjective>Therapeutic</LTF_BlocksMediStone.stuffProps.stuffAdjective>
+  <!-- EN: medistone chunk -->
+  <LTF_ChunkMediStone.label>medistone chunk</LTF_ChunkMediStone.label>
+  <!-- EN: A chunk of rock. Can be cut into usable stone blocks. -->
+  <LTF_ChunkMediStone.description>A chunk of rock. Can be cut into usable stone blocks.</LTF_ChunkMediStone.description>
+</LanguageData>

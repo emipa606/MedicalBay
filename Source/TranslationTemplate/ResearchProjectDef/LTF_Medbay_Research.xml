@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Medifuel advanced refining -->
+  <LTF_Research_AdvancedMedifuel.label>Medifuel advanced refining</LTF_Research_AdvancedMedifuel.label>
+  <!-- EN: Unlocks big volumes medifuel refining. 50x and 150x recipes -->
+  <LTF_Research_AdvancedMedifuel.description>Unlocks big volumes medifuel refining. 50x and 150x recipes</LTF_Research_AdvancedMedifuel.description>
+  <!-- EN: Draining tiles -->
+  <LTF_Research_DrainTile.label>Draining tiles</LTF_Research_DrainTile.label>
+  <!-- EN: A very expensive tile that provides an unmatched cleanliness -->
+  <LTF_Research_DrainTile.description>A very expensive tile that provides an unmatched cleanliness</LTF_Research_DrainTile.description>
+  <!-- EN: Filth compressor -->
+  <LTF_Research_FilthCompressor.label>Filth compressor</LTF_Research_FilthCompressor.label>
+  <!-- EN: A vacuum system that will get rid of the filth in a room. -->
+  <LTF_Research_FilthCompressor.description>A vacuum system that will get rid of the filth in a room.</LTF_Research_FilthCompressor.description>
+  <!-- EN: Computer assisted medicine basics -->
+  <LTF_Research_MedBay_T1.label>Computer assisted medicine basics</LTF_Research_MedBay_T1.label>
+  <!-- EN: Allows to create a Medbay -->
+  <LTF_Research_MedBay_T1.description>Allows to create a Medbay</LTF_Research_MedBay_T1.description>
+  <!-- EN: Advanced computer assisted medicine -->
+  <LTF_Research_MedBay_T2.label>Advanced computer assisted medicine</LTF_Research_MedBay_T2.label>
+  <!-- EN: Allows to create a T2 Medbay with enhanced tending quality and regeneration ratio -->
+  <LTF_Research_MedBay_T2.description>Allows to create a T2 Medbay with enhanced tending quality and regeneration ratio</LTF_Research_MedBay_T2.description>
+  <!-- EN: Military computer assisted medicine -->
+  <LTF_Research_MedBay_T3.label>Military computer assisted medicine</LTF_Research_MedBay_T3.label>
+  <!-- EN: Allows to create a T3 Medbay with enhanced tending quality and regeneration ratio -->
+  <LTF_Research_MedBay_T3.description>Allows to create a T3 Medbay with enhanced tending quality and regeneration ratio</LTF_Research_MedBay_T3.description>
+  <!-- EN: Medifuel refining -->
+  <LTF_Research_Medifuel.label>Medifuel refining</LTF_Research_Medifuel.label>
+  <!-- EN: Unlocks the medifuel formula and its refining. 1x and 10x recipes -->
+  <LTF_Research_Medifuel.description>Unlocks the medifuel formula and its refining. 1x and 10x recipes</LTF_Research_Medifuel.description>
+  <!-- EN: Medifuel alternative recipe -->
+  <LTF_Research_Medifuel_alternative.label>Medifuel alternative recipe</LTF_Research_Medifuel_alternative.label>
+  <!-- EN: Unlocks an alternative medifuel recipe (10x) that relies on more conventionnal ingredients. Each insect meat unit is replaced by 1.5 regular meat unit and .5 vegetable unit. -->
+  <LTF_Research_Medifuel_alternative.description>Unlocks an alternative medifuel recipe (10x) that relies on more conventionnal ingredients. Each insect meat unit is replaced by 1.5 regular meat unit and .5 vegetable unit.</LTF_Research_Medifuel_alternative.description>
+  <!-- EN: Medifuel advanced alternative recipe -->
+  <LTF_Research_Medifuel_alternative_bulk.label>Medifuel advanced alternative recipe</LTF_Research_Medifuel_alternative_bulk.label>
+  <!-- EN: Unlocks an alternative medifuel bulk recipe (50x) that relies on more conventionnal ingredients. -->
+  <LTF_Research_Medifuel_alternative_bulk.description>Unlocks an alternative medifuel bulk recipe (50x) that relies on more conventionnal ingredients.</LTF_Research_Medifuel_alternative_bulk.description>
+  <!-- EN: Chemical lithotherapy -->
+  <LTF_Research_Medistone.label>Chemical lithotherapy</LTF_Research_Medistone.label>
+  <!-- EN: Allows the creation of medifuel treated chunks -->
+  <LTF_Research_Medistone.description>Allows the creation of medifuel treated chunks</LTF_Research_Medistone.description>
+</LanguageData>

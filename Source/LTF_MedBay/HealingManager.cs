@@ -58,7 +58,7 @@ public class HealingManager
         regenRequests.RemoveAll(h => h != null);
     }
 
-    public void RegenLoopTick(bool localDebug = false)
+    private void RegenLoopTick(bool localDebug = false)
     {
         var list = new List<RegenerationRequest>();
         foreach (var regenRequest in regenRequests)
@@ -126,7 +126,7 @@ public class HealingManager
         }
     }
 
-    public void ReduceWorkAmount(ref int workAmount, List<BodyPartRecord> BprToRegen, Pawn pawn, float maxRegen,
+    private void ReduceWorkAmount(ref int workAmount, List<BodyPartRecord> BprToRegen, Pawn pawn, float maxRegen,
         bool localDebug = false)
     {
         if (BprToRegen.Count >= 3)
@@ -148,7 +148,7 @@ public class HealingManager
         }
     }
 
-    public void TendingLoopTick(bool localDebug = false)
+    private void TendingLoopTick(bool localDebug = false)
     {
         var list = new List<TendingRequest>();
         foreach (var tendingRequest in tendingRequests)

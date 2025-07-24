@@ -90,7 +90,7 @@ public static class MedBayParameters
         Everybody = 0xF
     }
 
-    public static bool TargetsGenre(this TargetGenre targetGenre, TargetGenre targetGenreDef)
+    private static bool TargetsGenre(this TargetGenre targetGenre, TargetGenre targetGenreDef)
     {
         return (targetGenre & targetGenreDef) != 0;
     }
@@ -125,7 +125,7 @@ public static class MedBayParameters
         return (TargetGenre)((int)targetGenre + (int)targetGenreDef);
     }
 
-    public static bool TargetsFaction(this TargetFaction targetFaction, TargetFaction targetFactionDef)
+    private static bool TargetsFaction(this TargetFaction targetFaction, TargetFaction targetFactionDef)
     {
         return (targetFaction & targetFactionDef) != 0;
     }

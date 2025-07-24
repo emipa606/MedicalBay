@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: t1 medbay -->
+  <LTF_MedBay.label>t1 medbay</LTF_MedBay.label>
+  <!-- EN: A medical bay that will automatically tend and regenerate the premises's occupants.\n- Tending quality: from 40%, up to 100%\n- Regeneration max: 90%\n- 45% of the tending quality and 30% of the regen value depend on the building quality and the placebo effect induced by the therapeutic walls.\n- Medifuel consumption: 1.25 per tending quality point; 2 per regeneration point -->
+  <LTF_MedBay.description>A medical bay that will automatically tend and regenerate the premises's occupants.
+- Tending quality: from 40%, up to 100%
+- Regeneration max: 90%
+- 45% of the tending quality and 30% of the regen value depend on the building quality and the placebo effect induced by the therapeutic walls.
+- Medifuel consumption: 1.25 per tending quality point; 2 per regeneration point</LTF_MedBay.description>
+  <!-- EN: t2 medbay -->
+  <LTF_T2MedBay.label>t2 medbay</LTF_T2MedBay.label>
+  <!-- EN: A medical bay that will automatically tend and regenerate the premises's occupants.\n- Tending quality: from 50%, up to 100%\n- Regeneration max: 95%\n- 35% of the tending quality and 25% of the regen value depend on the building quality and the placebo effect induced by the therapeutic walls.\n- Medifuel consumption: 1.5 per tending quality point; 2.25 per regeneration point -->
+  <LTF_T2MedBay.description>A medical bay that will automatically tend and regenerate the premises's occupants.
+- Tending quality: from 50%, up to 100%
+- Regeneration max: 95%
+- 35% of the tending quality and 25% of the regen value depend on the building quality and the placebo effect induced by the therapeutic walls.
+- Medifuel consumption: 1.5 per tending quality point; 2.25 per regeneration point</LTF_T2MedBay.description>
+  <!-- EN: t3 medbay -->
+  <LTF_T3MedBay.label>t3 medbay</LTF_T3MedBay.label>
+  <!-- EN: A medical bay that will automatically tend and regenerate the premises's occupants.\n- Tending quality: from 60%, up to 100%\n- Regeneration max: up to 100%\n- 25% of the tending quality and 20% of the regen value depend on the building quality and the placebo effect induced by the therapeutic walls.\n- Medifuel consumption: 1.75 per tending quality point; 2.5 per regeneration point.\n- Can heal mechanoids and bionic body parts. -->
+  <LTF_T3MedBay.description>A medical bay that will automatically tend and regenerate the premises's occupants.
+- Tending quality: from 60%, up to 100%
+- Regeneration max: up to 100%
+- 25% of the tending quality and 20% of the regen value depend on the building quality and the placebo effect induced by the therapeutic walls.
+- Medifuel consumption: 1.75 per tending quality point; 2.5 per regeneration point.
+- Can heal mechanoids and bionic body parts.</LTF_T3MedBay.description>
+</LanguageData>

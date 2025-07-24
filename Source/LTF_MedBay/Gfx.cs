@@ -22,7 +22,7 @@ public class Gfx
 
     private static readonly string overlayDir = $"{MedBayPath}Overlay/";
 
-    public static readonly Vector2 BarSize = new Vector2(0.6f, 0.2f);
+    public static readonly Vector2 BarSize = new(0.6f, 0.2f);
 
     public static readonly Material TRBarFilledMat =
         SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.43f, 0.78f, 0.84f));

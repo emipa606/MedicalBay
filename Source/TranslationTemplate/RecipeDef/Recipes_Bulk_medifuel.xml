@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make medifuel x10 -->
+  <Make_10xMedifuel.label>make medifuel x10</Make_10xMedifuel.label>
+  <!-- EN: Mix up medifuel ingredients to produce 10 units at a time.\n\nThe 10x bulk production compared to the 1x base recipe, grants :\n+10% productivity gain\n-10% ingredient cost. -->
+  <Make_10xMedifuel.description>Mix up medifuel ingredients to produce 10 units at a time.
+
+The 10x bulk production compared to the 1x base recipe, grants :
++10% productivity gain
+-10% ingredient cost.</Make_10xMedifuel.description>
+  <!-- EN: Refining medifuel x10 -->
+  <Make_10xMedifuel.jobString>Refining medifuel x10</Make_10xMedifuel.jobString>
+  <!-- EN: make medifuel x150 -->
+  <Make_150xMedifuel.label>make medifuel x150</Make_150xMedifuel.label>
+  <!-- EN: Mix up medifuel ingredients to produce 150 units at a time. \n\nThe 150x bulk production compared to the 1x base recipe, grants :\n+30% productivity gain\n-20% ingredient cost. -->
+  <Make_150xMedifuel.description>Mix up medifuel ingredients to produce 150 units at a time. 
+
+The 150x bulk production compared to the 1x base recipe, grants :
++30% productivity gain
+-20% ingredient cost.</Make_150xMedifuel.description>
+  <!-- EN: Refining medifuel x150 -->
+  <Make_150xMedifuel.jobString>Refining medifuel x150</Make_150xMedifuel.jobString>
+  <!-- EN: make medifuel x50 -->
+  <Make_50xMedifuel.label>make medifuel x50</Make_50xMedifuel.label>
+  <!-- EN: Mix up medifuel ingredients to produce 50 units at a time.\n\nThe 50x bulk production compared to the 1x base recipe, grants :\n+20% productivity gain\n-15% ingredient cost. -->
+  <Make_50xMedifuel.description>Mix up medifuel ingredients to produce 50 units at a time.
+
+The 50x bulk production compared to the 1x base recipe, grants :
++20% productivity gain
+-15% ingredient cost.</Make_50xMedifuel.description>
+  <!-- EN: Refining medifuel x50 -->
+  <Make_50xMedifuel.jobString>Refining medifuel x50</Make_50xMedifuel.jobString>
+</LanguageData>

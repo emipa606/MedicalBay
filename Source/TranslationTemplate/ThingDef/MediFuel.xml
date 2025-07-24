@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: medifuel -->
+  <LTF_MediFuel.label>medifuel</LTF_MediFuel.label>
+  <!-- EN: The chemical formula of medifuel involves many ingredients which at first sight dont feel smart to mix up.\nThe resulting product, if used without computer assistance, has mitigated results even if better than raw herbal medicine. Its true potency is displayed in combination with a medbay. It allows automatic tending and limb regeneration.\nIt is as explosive as regular chemfuel and can be drunk for some ephemeral pleasure. -->
+  <LTF_MediFuel.description>The chemical formula of medifuel involves many ingredients which at first sight dont feel smart to mix up.
+The resulting product, if used without computer assistance, has mitigated results even if better than raw herbal medicine. Its true potency is displayed in combination with a medbay. It allows automatic tending and limb regeneration.
+It is as explosive as regular chemfuel and can be drunk for some ephemeral pleasure.</LTF_MediFuel.description>
+  <!-- EN: Drink {0} -->
+  <LTF_MediFuel.ingestible.ingestCommandString>Drink {0}</LTF_MediFuel.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <LTF_MediFuel.ingestible.ingestReportString>Drinking {0}.</LTF_MediFuel.ingestible.ingestReportString>
+</LanguageData>

@@ -64,7 +64,7 @@ public static class HealingParameters
         [Description("Random")] Random = 4
     }
 
-    public static bool prioritizeType(this TypePriority typePriority, TypePriority typePriorityDef)
+    private static bool prioritizeType(this TypePriority typePriority, TypePriority typePriorityDef)
     {
         return (typePriority & typePriorityDef) != 0;
     }

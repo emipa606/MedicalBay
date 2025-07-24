@@ -6,7 +6,7 @@ namespace LTF_MedBay;
 
 public class ITab_MedBay : ITab
 {
-    public static readonly Vector2 WinSize = new Vector2(300f, 480f);
+    public static readonly Vector2 WinSize = new(300f, 480f);
 
     public ITab_MedBay()
     {

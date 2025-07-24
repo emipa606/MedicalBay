@@ -7,7 +7,7 @@ namespace LTF_MedBay;
 
 public class MedBayGizmo
 {
-    public static void ShowReport(WaitingRoom waitingRoom)
+    private static void ShowReport(WaitingRoom waitingRoom)
     {
         var stringBuilder = new StringBuilder();
         _ = string.Empty;
@@ -50,7 +50,7 @@ public class MedBayGizmo
         }
     }
 
-    public static IEnumerable<Gizmo> WaitingRoomGizmo(Comp_LTF_MedBay MBComp)
+    private static IEnumerable<Gizmo> WaitingRoomGizmo(Comp_LTF_MedBay MBComp)
     {
         if (!MBComp.ValidRoom)
         {
@@ -67,7 +67,7 @@ public class MedBayGizmo
         };
     }
 
-    public static IEnumerable<Gizmo> ManualTendingStart(Comp_LTF_MedBay MBComp)
+    private static IEnumerable<Gizmo> ManualTendingStart(Comp_LTF_MedBay MBComp)
     {
         if (MBComp.MyWaitingRoom.MyHealingManager.AutomaticTending || !MBComp.HasTendingRequest ||
             MBComp.MyWaitingRoom.MyHealingManager.ManualTendingStart)
@@ -85,7 +85,7 @@ public class MedBayGizmo
         };
     }
 
-    public static IEnumerable<Gizmo> ManualRegenStart(Comp_LTF_MedBay MBComp)
+    private static IEnumerable<Gizmo> ManualRegenStart(Comp_LTF_MedBay MBComp)
     {
         if (MBComp.MyWaitingRoom.MyHealingManager.AutomaticRegen || !MBComp.HasRegenerationRequest ||
             MBComp.MyWaitingRoom.MyHealingManager.ManualRegenStart)
@@ -103,7 +103,7 @@ public class MedBayGizmo
         };
     }
 
-    public static IEnumerable<Gizmo> ManualStartAll(Comp_LTF_MedBay MBComp)
+    private static IEnumerable<Gizmo> ManualStartAll(Comp_LTF_MedBay MBComp)
     {
         if (MBComp.MyWaitingRoom.MyHealingManager.AutomaticRegen ||
             !MBComp.MyWaitingRoom.MyHealingManager.AutomaticTending || !MBComp.HasTendingRequest ||
@@ -127,7 +127,7 @@ public class MedBayGizmo
         };
     }
 
-    public static IEnumerable<Gizmo> DebugGizmo(Comp_LTF_MedBay MBComp)
+    private static IEnumerable<Gizmo> DebugGizmo(Comp_LTF_MedBay MBComp)
     {
         if (!DebugSettings.godMode)
         {

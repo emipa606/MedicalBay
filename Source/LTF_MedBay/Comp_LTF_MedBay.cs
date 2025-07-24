@@ -120,7 +120,7 @@ public class Comp_LTF_MedBay : ThingComp
 
     public bool InvalidRoom => !ValidRoom;
 
-    public bool HasHealingRequest => MyHealingManager.HasRequest;
+    private bool HasHealingRequest => MyHealingManager.HasRequest;
 
     public bool HasTendingRequest => MyHealingManager.HasTendingRequest;
 
@@ -128,7 +128,7 @@ public class Comp_LTF_MedBay : ThingComp
 
     public bool HasPowerOn => powerComp is { PowerOn: true };
 
-    public void MyQualityInit()
+    private void MyQualityInit()
     {
         if ((qualityComp = bench.SetQuality(processDebug)) == null)
         {
@@ -136,7 +136,7 @@ public class Comp_LTF_MedBay : ThingComp
         }
     }
 
-    public void MyPowerInit()
+    private void MyPowerInit()
     {
         if ((powerComp = bench.SetPower(processDebug)) == null)
         {
@@ -144,7 +144,7 @@ public class Comp_LTF_MedBay : ThingComp
         }
     }
 
-    public void MyRefuelableInit()
+    private void MyRefuelableInit()
     {
         if ((refuelableComp = bench.SetRefuelable(processDebug)) == null)
         {
@@ -202,7 +202,7 @@ public class Comp_LTF_MedBay : ThingComp
         }
     }
 
-    public void ResetHealingRequest()
+    private void ResetHealingRequest()
     {
         MyHealingManager.ResetAll();
     }

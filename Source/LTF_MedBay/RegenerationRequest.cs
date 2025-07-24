@@ -23,7 +23,7 @@ public class RegenerationRequest
 
     private bool debug => MBComp.processDebug;
 
-    public float WeightedBPRHealth(Pawn pawn, BodyPartRecord BPR, float ratio)
+    private float WeightedBPRHealth(Pawn pawn, BodyPartRecord BPR, float ratio)
     {
         return BPR.def.GetMaxHealth(pawn) * ratio;
     }

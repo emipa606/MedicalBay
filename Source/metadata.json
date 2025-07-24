@@ -3,5 +3,16 @@
   "CanAdd": "0",
   "CanRemove": "2",
   "SocialImageSet": true,
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 113929,
+  "LinesOfXML": 49969,
+  "CodeBaseSize": 82,
+  "LastXmlCleaning": "2025-07-24T16:47:09.3212653+02:00",
+  "SearchTags": [
+    " medical",
+    " facility"
+  ]
 }

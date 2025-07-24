@@ -112,11 +112,7 @@ public static class PawnTools
             return null;
         }
 
-        _ = ageTracker.AgeBiologicalYears;
-        if (true)
-        {
-            return
-                $"{pawn.LabelShort.CapitalizeFirst()}, {(pawn.ageTracker?.AgeBiologicalYears).Value} y/o {pawn.gender.GetLabel()}, {pawn.def?.label}{empty}";
-        }
+        var years = ageTracker.AgeBiologicalYears;
+        return $"{pawn.LabelShort.CapitalizeFirst()}, {years} y/o {pawn.gender.GetLabel()}, {pawn.def?.label}{empty}";
     }
 }

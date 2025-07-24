@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: drain tile -->
+  <LTF_DrainFloor.label>drain tile</LTF_DrainFloor.label>
+  <!-- EN: These drain tiles have extra cleanliness-enhancing properties but they come with downsides. They have an incorporated drain and are made of medistone, allowing a 150x cleanliness compared to the regular sterile tiles.\n\nDownsides :\n- Very slow to build\n- Very expensive\n- High flammability\n- Slows down\n\nThese tiles should be used with parsimony. -->
+  <LTF_DrainFloor.description>These drain tiles have extra cleanliness-enhancing properties but they come with downsides. They have an incorporated drain and are made of medistone, allowing a 150x cleanliness compared to the regular sterile tiles.
+
+Downsides :
+- Very slow to build
+- Very expensive
+- High flammability
+- Slows down
+
+These tiles should be used with parsimony.</LTF_DrainFloor.description>
+</LanguageData>

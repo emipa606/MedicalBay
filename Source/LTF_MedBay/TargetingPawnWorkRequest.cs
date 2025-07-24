@@ -9,7 +9,7 @@ public class TargetingPawnWorkRequest
 
     public readonly Pawn Patient;
 
-    public int Progress;
+    private int Progress;
 
     public Sustainer sustainer;
 

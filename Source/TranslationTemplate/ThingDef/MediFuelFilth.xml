@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: medifuel puddle -->
+  <Filth_MediFuel.label>medifuel puddle</Filth_MediFuel.label>
+  <!-- EN: A puddle of flammable medifuel. -->
+  <Filth_MediFuel.description>A puddle of flammable medifuel.</Filth_MediFuel.description>
+  <!-- EN: medistone rubble -->
+  <Filth_RubbleMediStone.label>medistone rubble</Filth_RubbleMediStone.label>
+</LanguageData>

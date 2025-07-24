@@ -43,7 +43,7 @@ public class GfxTools
         }
     }
 
-    public static void DrawDot(Vector3 benchPos, Material dotGfx, Mesh mesh, Thing bench, float x, float z,
+    private static void DrawDot(Vector3 benchPos, Material dotGfx, Mesh mesh, Thing bench, float x, float z,
         bool pulse = false, float width = 1f, float height = 1f)
     {
         var pos = benchPos;
@@ -115,7 +115,7 @@ public class GfxTools
         FlickerBar(benchPos, material, mesh, x2, z2);
     }
 
-    public static void FlickerBar(Vector3 benchPos, Material dotM, Mesh mesh, float x, float z)
+    private static void FlickerBar(Vector3 benchPos, Material dotM, Mesh mesh, float x, float z)
     {
         var pos = benchPos;
         pos.x += x;
@@ -132,7 +132,7 @@ public class GfxTools
         Graphics.DrawMesh(mesh, matrix, material, 0);
     }
 
-    public static float PulseOpacity(Thing thing)
+    private static float PulseOpacity(Thing thing)
     {
         var num = ((float)Math.Sin((Time.realtimeSinceStartup + (397f * (thing.thingIDNumber % 571))) * 4f) + 1f) *
                   0.5f;

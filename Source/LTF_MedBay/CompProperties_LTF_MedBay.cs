@@ -24,7 +24,7 @@ public class CompProperties_LTF_MedBay : CompProperties
 
     public bool regeneratesBionics;
 
-    public FloatRange tendingQualityRange = new FloatRange(0.45f, 0.65f);
+    public FloatRange tendingQualityRange = new(0.45f, 0.65f);
 
     public bool treatsMechanoids;
 

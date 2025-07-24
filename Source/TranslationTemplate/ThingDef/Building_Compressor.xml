@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Fueled filth compressor -->
+  <LTF_FilthCompressorFuel.label>Fueled filth compressor</LTF_FilthCompressorFuel.label>
+  <!-- EN: A filth compressor that will destroy filth if it is in the same room as draining tiles.\nThe more draining tiles there are, the higher the fuel consumption will be. The further from the filth the drain tile is, the higher the fuel consumption will be. -->
+  <LTF_FilthCompressorFuel.description>A filth compressor that will destroy filth if it is in the same room as draining tiles.
+The more draining tiles there are, the higher the fuel consumption will be. The further from the filth the drain tile is, the higher the fuel consumption will be.</LTF_FilthCompressorFuel.description>
+</LanguageData>

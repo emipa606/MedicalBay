@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 965917198
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f12cbb153957c1fffa1b049e937ee20b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f12cbb153957c1fffa1b049e937ee20b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.MedicalBay/Sounds/Special/RegenLoop2.mp3
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Item/BlocksMediStone/BlocksMediStone01.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Auto/AutomaticOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/MedBayT3_south.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/AlienOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgE.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/MechanoidOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Auto/RegenOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/FactionParams.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Item/BlocksMediStone/BlocksMediStone25.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoomLog.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Debug.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/AllyOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/MedBayT2_south.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/WorkBarM.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Auto/TendingOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/ScreenMedBayStandBy.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Unused/Params.png
+- Assets/Data/Mlie.MedicalBay/Sounds/Special/RegenInit.mp3
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/AlienOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Item/MediFuel/MediFuel75.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/WorkBarS.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgD.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgA.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/FactionEverybody.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/HumanOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/KindEverybody.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/FilthCompressor/FueledCompressor_south.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/PlayerOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/FactionNobody.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/MedBay_southm.png.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/NoFactionOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/AutomaticParams.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/HumanOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Item/MediFuel/MediFuel01.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/Linked/Wall/Wall_Atlas_Therapeutic_m.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/FilthCompressor/FueledCompressor_southm.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Auto/TendingOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgG.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/RaceParams.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Manual/StartRegen.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/PlayerOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/HiddenLeft.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgI.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/ScreenMedBayActive.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/MedBay_south.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoomParams.png
+- Assets/Data/Mlie.MedicalBay/Textures/Terrain/Surfaces/DrainFloor.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgF.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/EnemyOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Manual/StartTend.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgB.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/AnimalOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/AllyOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Auto/AutomaticOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Item/BlocksMediStone/BlocksMediStone75.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Item/MediFuel/MediFuel25.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Unused/Back.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/ExpandedLeft.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/MechanoidOn.png
+- Assets/Data/Mlie.MedicalBay/Sounds/Special/RegenLoop.mp3
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/WorkBarL.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/NoFactionOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgH.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/AnimalOn.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgJ.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/MedBayT2_southm.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Faction/EnemyOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Manual/StartAll.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/Overlay/Anim/ecg/ecgC.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/MedBay/MedBayT3_southm.png
+- Assets/Data/Mlie.MedicalBay/Textures/Things/Building/Linked/Wall/Wall_Atlas_Therapeutic.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/Auto/RegenOff.png
+- Assets/Data/Mlie.MedicalBay/Textures/UI/Commands/WaitingRoom/Race/KindNobody.png
+Dependencies: []

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make medistone chunk -->
+  <Make_ChunkMediStone.label>make medistone chunk</Make_ChunkMediStone.label>
+  <!-- EN: treat regular stone chunks with medifuel into medistone chunks. -->
+  <Make_ChunkMediStone.description>treat regular stone chunks with medifuel into medistone chunks.</Make_ChunkMediStone.description>
+  <!-- EN: Treating a regular chunk with medifuel. -->
+  <Make_ChunkMediStone.jobString>Treating a regular chunk with medifuel.</Make_ChunkMediStone.jobString>
+  <!-- EN: make medistone blocks -->
+  <Make_StoneBlocksMediStone.label>make medistone blocks</Make_StoneBlocksMediStone.label>
+  <!-- EN: Cuts medistone chunks into usable blocks. -->
+  <Make_StoneBlocksMediStone.description>Cuts medistone chunks into usable blocks.</Make_StoneBlocksMediStone.description>
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <Make_StoneBlocksMediStone.jobString>Cutting stone blocks from chunk.</Make_StoneBlocksMediStone.jobString>
+</LanguageData>
