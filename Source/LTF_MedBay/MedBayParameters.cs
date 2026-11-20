@@ -90,103 +90,109 @@ public static class MedBayParameters
         Everybody = 0xF
     }
 
-    private static bool TargetsGenre(this TargetGenre targetGenre, TargetGenre targetGenreDef)
+    extension(TargetGenre targetGenre)
     {
-        return (targetGenre & targetGenreDef) != 0;
-    }
-
-    public static bool TargetsHuman(this TargetGenre targetGenre)
-    {
-        return targetGenre.TargetsGenre(TargetGenre.Human);
-    }
-
-    public static bool TargetsAlien(this TargetGenre targetGenre)
-    {
-        return targetGenre.TargetsGenre(TargetGenre.Alien);
-    }
-
-    public static bool TargetsAnimal(this TargetGenre targetGenre)
-    {
-        return targetGenre.TargetsGenre(TargetGenre.Animal);
-    }
-
-    public static bool TargetsMechanoid(this TargetGenre targetGenre)
-    {
-        return targetGenre.TargetsGenre(TargetGenre.Mechanoid);
-    }
-
-    public static TargetGenre TogglesGenre(this TargetGenre targetGenre, TargetGenre targetGenreDef)
-    {
-        if (targetGenre.TargetsGenre(targetGenreDef))
+        private bool TargetsGenre(TargetGenre targetGenreDef)
         {
-            return (TargetGenre)(targetGenre - targetGenreDef);
+            return (targetGenre & targetGenreDef) != 0;
         }
 
-        return (TargetGenre)((int)targetGenre + (int)targetGenreDef);
-    }
-
-    private static bool TargetsFaction(this TargetFaction targetFaction, TargetFaction targetFactionDef)
-    {
-        return (targetFaction & targetFactionDef) != 0;
-    }
-
-    public static bool TargetsNoFaction(this TargetFaction targetFaction)
-    {
-        return targetFaction.TargetsFaction(TargetFaction.NoFaction);
-    }
-
-    public static bool TargetsPlayer(this TargetFaction targetFaction)
-    {
-        return targetFaction.TargetsFaction(TargetFaction.Player);
-    }
-
-    public static bool TargetsAlly(this TargetFaction targetFaction)
-    {
-        return targetFaction.TargetsFaction(TargetFaction.Ally);
-    }
-
-    public static bool TargetsEnemy(this TargetFaction targetFaction)
-    {
-        return targetFaction.TargetsFaction(TargetFaction.Enemy);
-    }
-
-    public static TargetFaction TogglesFaction(this TargetFaction targetFaction, TargetFaction targetFactionDef)
-    {
-        if (targetFaction.TargetsFaction(targetFactionDef))
+        public bool TargetsHuman()
         {
-            return (TargetFaction)(targetFaction - targetFactionDef);
+            return targetGenre.TargetsGenre(TargetGenre.Human);
         }
 
-        return (TargetFaction)((int)targetFaction + (int)targetFactionDef);
+        public bool TargetsAlien()
+        {
+            return targetGenre.TargetsGenre(TargetGenre.Alien);
+        }
+
+        public bool TargetsAnimal()
+        {
+            return targetGenre.TargetsGenre(TargetGenre.Animal);
+        }
+
+        public bool TargetsMechanoid()
+        {
+            return targetGenre.TargetsGenre(TargetGenre.Mechanoid);
+        }
+
+        public TargetGenre TogglesGenre(TargetGenre targetGenreDef)
+        {
+            if (targetGenre.TargetsGenre(targetGenreDef))
+            {
+                return (TargetGenre)(targetGenre - targetGenreDef);
+            }
+
+            return (TargetGenre)((int)targetGenre + (int)targetGenreDef);
+        }
     }
 
-    public static bool IsFactionParametersCompatible(this TargetFaction targetFaction, Faction patientFaction,
-        bool debug = false)
+    extension(TargetFaction targetFaction)
     {
-        Tools.Warn(
-            $"Entering IsFactionParametersCompatible; TargetFaction: {targetFaction.DescriptionAttr()}; patientFaction: {patientFaction} ==null?: {patientFaction == null}; playerFaction: {Faction.OfPlayer}",
-            debug);
-        if (targetFaction == TargetFaction.Nobody)
+        private bool TargetsFaction(TargetFaction targetFactionDef)
         {
-            return false;
+            return (targetFaction & targetFactionDef) != 0;
         }
 
-        if (targetFaction.TargetsNoFaction() && patientFaction == null)
+        public bool TargetsNoFaction()
         {
-            return true;
+            return targetFaction.TargetsFaction(TargetFaction.NoFaction);
         }
 
-        if (targetFaction.TargetsPlayer() && patientFaction == Faction.OfPlayer)
+        public bool TargetsPlayer()
         {
-            return true;
+            return targetFaction.TargetsFaction(TargetFaction.Player);
         }
 
-        if (targetFaction.TargetsAlly() && patientFaction.AllyOrNeutralTo(Faction.OfPlayer))
+        public bool TargetsAlly()
         {
-            return true;
+            return targetFaction.TargetsFaction(TargetFaction.Ally);
         }
 
-        return targetFaction.TargetsEnemy() && patientFaction.HostileTo(Faction.OfPlayer);
+        public bool TargetsEnemy()
+        {
+            return targetFaction.TargetsFaction(TargetFaction.Enemy);
+        }
+
+        public TargetFaction TogglesFaction(TargetFaction targetFactionDef)
+        {
+            if (targetFaction.TargetsFaction(targetFactionDef))
+            {
+                return (TargetFaction)(targetFaction - targetFactionDef);
+            }
+
+            return (TargetFaction)((int)targetFaction + (int)targetFactionDef);
+        }
+
+        public bool IsFactionParametersCompatible(Faction patientFaction,
+            bool debug = false)
+        {
+            Tools.Warn(
+                $"Entering IsFactionParametersCompatible; TargetFaction: {targetFaction.DescriptionAttr()}; patientFaction: {patientFaction} ==null?: {patientFaction == null}; playerFaction: {Faction.OfPlayer}",
+                debug);
+            if (targetFaction == TargetFaction.Nobody)
+            {
+                return false;
+            }
+
+            if (targetFaction.TargetsNoFaction() && patientFaction == null)
+            {
+                return true;
+            }
+
+            if (targetFaction.TargetsPlayer() && patientFaction == Faction.OfPlayer)
+            {
+                return true;
+            }
+
+            if (targetFaction.TargetsAlly() && patientFaction.AllyOrNeutralTo(Faction.OfPlayer))
+            {
+                return true;
+            }
+
+            return targetFaction.TargetsEnemy() && patientFaction.HostileTo(Faction.OfPlayer);
+        }
     }
 
     public static bool IsGenreParametersCompatible(this TargetGenre targetGenre, Pawn patient, bool debug = false)

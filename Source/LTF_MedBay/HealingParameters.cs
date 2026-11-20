@@ -64,18 +64,21 @@ public static class HealingParameters
         [Description("Random")] Random = 4
     }
 
-    private static bool prioritizeType(this TypePriority typePriority, TypePriority typePriorityDef)
+    extension(TypePriority typePriority)
     {
-        return (typePriority & typePriorityDef) != 0;
-    }
+        private bool prioritizeType(TypePriority typePriorityDef)
+        {
+            return (typePriority & typePriorityDef) != 0;
+        }
 
-    public static bool TendingFirst(this TypePriority priority)
-    {
-        return priority.prioritizeType(TypePriority.Tending);
-    }
+        public bool TendingFirst()
+        {
+            return typePriority.prioritizeType(TypePriority.Tending);
+        }
 
-    public static bool RegenFirst(this TypePriority priority)
-    {
-        return priority.prioritizeType(TypePriority.Regen);
+        public bool RegenFirst()
+        {
+            return typePriority.prioritizeType(TypePriority.Regen);
+        }
     }
 }

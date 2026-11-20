@@ -4,7 +4,7 @@ using Verse;
 namespace LTF_MedBay;
 
 [StaticConstructorOnStartup]
-public class Gfx
+public static class Gfx
 {
     public enum Layer
     {

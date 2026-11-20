@@ -11,9 +11,9 @@ public class TargetingPawnWorkRequest
 
     private int Progress;
 
-    public Sustainer sustainer;
-
     public int WorkAmount = 500;
+
+    public Sustainer sustainer;
 
     public TargetingPawnWorkRequest(Pawn newPawn, HealingManager parentHM)
     {

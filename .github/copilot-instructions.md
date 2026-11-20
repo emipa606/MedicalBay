@@ -1,51 +1,81 @@
-# GitHub Copilot Instructions for RimWorld Modding Project: LTF MedBay
+# GitHub Copilot Instructions for Medical Bay (Continued) Mod
 
 ## Mod Overview and Purpose
 
-LTF MedBay is a RimWorld mod designed to enhance the medical capabilities of colonies by introducing advanced medical facilities, new functionalities for tending to and regenerating pawns, and improving overall medical efficiency during crises. The mod focuses on automating medical care, providing a streamlined healing process, and improving the recovery time of injured pawns, making colony management less stressful and more efficient during battles or hazardous events.
+**Medical Bay (Continued)** is a RimWorld mod that adds a medical bay building to your game. The medical bay tends and regenerates every unit in a room, reducing their scares and allowing you to configure it to prioritize certain patients. Additionally, the mod includes a filth compressor and draining tiles to keep rooms clean while consuming chemfuel.
 
 ## Key Features and Systems
 
-- **Advanced Medical Bay Components**: Including `Comp_LTF_MedBay` and `Comp_LTF_FilthCompressor`, which manage therapeutic processes and environment cleanliness respectively.
-  
-- **Healing Management**: A comprehensive `HealingManager` system that orchestrates regeneration and tending requests for pawns, managing medical tasks automatically based on predefined parameters.
+### Medical Bay
+- **Healing**: Tends and regenerates all units in the room.
+- **Fuel**: Requires medifuel to operate.
+- **Conditions**: Certain conditions must be met for full healing (e.g., building quality, therapeutic walls).
+- **Placebo Effect**: Enhanced by therapeutic walls made of medistone.
+- **Log Button**: Shows statistics and dependencies for healing.
 
-- **Filth Compression**: Utilizing `Comp_LTF_FilthCompressor` to handle room filth and ensure a cleaner, healthier environment for recuperating pawns.
+### Filth Compressor
+- **Cleanliness**: Removes filth from rooms with draining tiles.
+- **Consumption**: Higher consumption with more draining tiles and distant filth.
 
-- **Graphic Overlays**: The `Graphic_EcgOverlay` provides a visual ECG representation for active medical beds, adding a thematic layer to medical activities.
+### Draining Tiles
+- **Cleanliness**: Keeps rooms clean by removing filth with the filth compressor.
+- **Consumption**: Increases chemfuel consumption.
 
-- **Mod Compatibility Checks**: The `ModCompatibilityCheck` ensures that LTF MedBay integrates smoothly with other installed mods, avoiding potential conflicts and redundancies.
+### Medifuel
+- **Function**: Fuels the medical bay.
+- **Recipe**: Requires megaspider meat, fuel, and healroot.
+- **Advanced Recipes**: Unlockable with research.
+
+### Medistone
+- **Construction**: Required for building the medical bay.
+- **Placebo Effect**: Enhances the medical bay's effects when used in therapeutic walls.
+- **Building Materials**: Can be used to build beds and doors with special qualities.
 
 ## Coding Patterns and Conventions
 
-- **Class and Method Naming**: PascalCase is used for class names and method names, emphasizing clarity and readability.
-  
-- **Encapsulation**: Private helper methods are used, such as `MedBayInit()` and `CompressorInit()`, to encapsulate initialization logic that does not need to be exposed publicly.
-  
-- **Extension of Core Classes**: The mod extends core RimWorld classes like `ThingComp` to introduce new functionalities while leveraging existing game mechanics.
-  
-- **Static Utility Extensions**: Several static utility classes, such as `Tools` and `BuildingTools`, provide helper methods for common tasks shared across the mod.
+1. **Mod Structure**: The mod is organized into C# files for functionality and XML files for defining game elements.
+2. **Namespace**: Use `LTF_MedBay` as the main namespace.
+3. **Coding Standards**: Follow RimWorld's coding standards and conventions, such as using `RimWorld` and `Verse` namespaces.
+4. **Documentation**: Comment your code thoroughly, especially for complex methods and classes.
+5. **Error Handling**: Implement error handling to manage unexpected situations gracefully.
 
 ## XML Integration
 
-While the specific XML content is not provided, XML files are likely used in the mod to define:
-- **Defining New Object Types**: XML files might be utilized to create new game objects like medical devices or room types.
-- **Balance and Configuration**: Parameters for healing rates, power consumption, refueling, and other customizable settings could be defined in XML.
-- **Harmony Patches**: XML may be used to outline patch targets and ensure Harmony patches are appropriately applied to desired game functions.
+XML files are crucial for defining game elements. Ensure that:
+- **Defs**: Properly define all `RecipeDef`, `ResearchProjectDef`, `ThingDef`, and other required definitions.
+- **Attributes**: Use attributes accurately to specify properties like `researchPrerequisites`, `ingredients`, and `products`.
+- **Naming**: Follow RimWorld's naming conventions for consistency.
 
 ## Harmony Patching
 
-Harmony is employed to patch RimWorld methods, enabling the mod to seamlessly integrate new functionalities without altering the game's source code directly. Thorough testing of Harmony patches is critical to prevent potential game-breaking bugs:
-- **Targeting Specific Methods**: Harmony patches should specifically target problem areas or enhancement points in RimWorld's methods via annotations.
-- **Pre and Postfix**: Utilize Harmony’s pre- and postfix techniques to inject mod logic before or after vanilla methods execute.
+Harmony patching is used to modify existing game behavior. Key points include:
+- **Target Methods**: Identify the methods you want to patch.
+- **Patch Methods**: Create methods to replace or modify the target methods.
+- **Prefix/Suffix**: Use `Prefix` or `Suffix` to modify behavior before or after the target method.
+- **Testing**: Thoroughly test patches to ensure they work as expected.
 
 ## Suggestions for Copilot
 
-To enhance collaboration and efficiency when using GitHub Copilot in your development workflow, consider these suggestions:
-- **Code Comments**: Maintain detailed inline comments and method summaries to guide Copilot’s context understanding.
-- **Consistent Naming**: Ensure method names and variables are consistently descriptive to provide Copilot with meaningful context.
-- **Use Copilot for Boilerplate Code**: Leverage Copilot for generating repetitive patterns, such as initializing properties or creating simple value checks.
-- **Iterating Through Lists**: Use Copilot to aid in creating loops, especially when iterating over lists of pawns or game objects.
-- **Testing Patterns**: Use Copilot for creating basic unit tests and integration tests to ensure mod stability with varied RimWorld configurations.
+1. **Code Completion**: Use Copilot to complete complex methods and classes, ensuring they follow coding patterns and conventions.
+2. **XML Generation**: Utilize Copilot to generate XML definitions, such as `RecipeDef` and `ThingDef`.
+3. **Patch Implementation**: Assist in implementing Harmony patches by generating the necessary target and patch methods.
+4. **Documentation**: Help document code by generating comments for methods and classes.
+5. **Testing**: Assist in writing unit tests for complex functionality.
 
-Adhering to these guidelines will facilitate the seamless integration of GitHub Copilot into your RimWorld mod development process, making your coding workflow more productive and efficient.
+By following these guidelines, you can effectively use GitHub Copilot to enhance your development process for the Medical Bay (Continued) mod.
+
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+
+
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
+

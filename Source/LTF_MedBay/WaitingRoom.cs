@@ -13,9 +13,6 @@ public class WaitingRoom
     public readonly Comp_LTF_MedBay ParentComp;
 
     private readonly ICollection<Pawn> RoomPawns = new List<Pawn>();
-    public float calculatedMaxRegen;
-
-    public FloatRange calculatedTendingQualityRange = new(0f, 0f);
 
     private int DrainingTilesNum;
 
@@ -29,9 +26,12 @@ public class WaitingRoom
 
     private int PlaceboWallsNum;
 
-    private Room room;
-
     private int WallsNum;
+    public float calculatedMaxRegen;
+
+    public FloatRange calculatedTendingQualityRange = new(0f, 0f);
+
+    private Room room;
 
     public WaitingRoom(Comp_LTF_MedBay initiator)
     {
@@ -446,9 +446,15 @@ public class WaitingRoom
         empty += "| Med bay statistics |\n";
         empty += "+---------------------+\n";
         empty = $"{empty}{roomPawnsCount} pawn{(roomPawnsCount > 1 ? "s" : "")} in the room";
-        empty = potentialPatientCount <= 0
-            ? empty + ".\n"
-            : empty + " of which " + potentialPatientCount + (potentialPatientCount > 1 ? " are" : " is") + " hurt.\n";
+        if (potentialPatientCount <= 0)
+        {
+            empty += ".\n";
+        }
+        else
+        {
+            empty = $"{empty} of which {potentialPatientCount}{(potentialPatientCount > 1 ? " are" : " is")} hurt.\n";
+        }
+
         if (!RoomPawns.EnumerableNullOrEmpty())
         {
             foreach (var roomPawn in RoomPawns)

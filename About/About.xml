@@ -11,30 +11,31 @@
     <li>1.4</li>
     <li>1.5</li>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+  <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of Gouda quiches mod https://steamcommunity.com/sharedfiles/filedetails/?id=2101075718
 
 - Added wildcard support for the filth-cleaner. Should clean all new types of filth now.
 
-[img]https://i.imgur.com/pufA0kM.png[/img]
+[img]https://img.litet.net/logos/Notice.png[/img]
 
 [table]
-    [tr][td][url=https://discord.gg/h5TY6DA][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td] [td][url=https://github.com/emipa606/MedicalBay][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [tr][td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td] [td][url=https://github.com/emipa606/MedicalBay][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
-        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/RemoveMayWork.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/Z4GOv8H.png[/img]
-[img]https://i.imgur.com/9Bu9Lem.png[/img]
+[img]https://img.litet.net/logos/OriginalDescription.png[/img]
+[img]https://img.litet.net/9Bu9Lem.png[/img]
 [img]https://vignette.wikia.nocookie.net/ftl/images/0/0f/MedbayCircle.png/revision/latest?cb=20150924212116[/img] A medical bay that will tend and regenerate every unit in a room. It will reduce scares and is configurable to sort out people you would not like to waste your medifuel on.
 
-[img]https://i.imgur.com/CVlgJM7.png[/img]
+[img]https://img.litet.net/CVlgJM7.png[/img]
 [*][h2]Medbay[/h2]
 [list]
 [*]The medbay needs to be filled with Medifuel to work, it's not free.
@@ -53,7 +54,7 @@ Update of Gouda quiches mod https://steamcommunity.com/sharedfiles/filedetails/?
 [/list]
 [/list]
 
-[img]https://i.imgur.com/j65fgqS.png[/img]
+[img]https://img.litet.net/j65fgqS.png[/img]
 [list]
 [*][h2]Medifuel[/h2]
 [list]
@@ -71,13 +72,13 @@ Update of Gouda quiches mod https://steamcommunity.com/sharedfiles/filedetails/?
 [/list]
 [/list]
 
-[img]https://i.imgur.com/9kOXMXt.png[/img]
+[img]https://img.litet.net/9kOXMXt.png[/img]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2141101865]Zoltan A, the adjudicator[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2203002421]Mantis B, the basilisk[/url]
 [/list]
 
-[img]https://i.imgur.com/mPn1G3B.png[/img]
+[img]https://img.litet.net/mPn1G3B.png[/img]
 [list]
 [*][b]Dr. Force A Failure[/b], for his feedback
 [*][b]GenomX[/b] for sharing his medistone texture with me
@@ -90,17 +91,17 @@ Update of Gouda quiches mod https://steamcommunity.com/sharedfiles/filedetails/?
 [*]https://ludeon.com/forums/index.php?topic=37908.0
 [/list]
 
-[img]https://i.imgur.com/PwoNOj4.png[/img]
+[img]https://img.litet.net/logos/ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] Always post your log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url]
 [*] For best support, please use the Discord-channel for error-reporting.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3320205277][img]https://img.shields.io/github/v/release/emipa606/MedicalBay?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  medical,  facility</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3320205277][img]https://img.shields.io/github/v/release/emipa606/MedicalBay?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | facility, medical</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.7.0</modVersion>
 </ModMetaData>

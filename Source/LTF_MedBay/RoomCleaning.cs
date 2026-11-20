@@ -26,9 +26,9 @@ public static class RoomCleaning
 
         var count = DrainingTilesPosList.Count;
         var list = new List<FilthWork>();
-        var filthWork = FilthList.First();
+        var filthWork = FilthList[0];
         var curF = filthWork.Filth;
-        if (curF == null || curF.Map == null || curF.IsReserved())
+        if (curF?.Map == null || curF.IsReserved())
         {
             return;
         }

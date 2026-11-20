@@ -8,19 +8,18 @@ namespace LTF_MedBay;
 [StaticConstructorOnStartup]
 public class Comp_LTF_FilthCompressor : ThingComp
 {
-    private Building building;
-
     private List<IntVec3> DrainingTilesPosList;
 
     private List<FilthWork> FilthList;
 
-    public bool gfxDebug;
-
     private bool Initialized;
 
-    private float lastRoomScore;
-
     private Room MyRoom;
+    private Building building;
+
+    public bool gfxDebug;
+
+    private float lastRoomScore;
 
     private CompPowerTrader powerComp;
 

@@ -5,10 +5,9 @@ namespace LTF_MedBay;
 
 public class CompProperties_LTF_FilthCompressor : CompProperties
 {
+    public readonly float FuelConsumptionDivider = 32f;
     public readonly List<string> aimedFilth = [];
     public readonly List<ThingDef> aimedFilthDefs = [];
-
-    public readonly float FuelConsumptionDivider = 32f;
 
     public bool debug;
 

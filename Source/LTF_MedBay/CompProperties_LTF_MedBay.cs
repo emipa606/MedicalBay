@@ -9,13 +9,13 @@ public class CompProperties_LTF_MedBay : CompProperties
 
     public readonly float fuelConsumptionPerTendingQuality = 1.25f;
 
-    public readonly List<HediffDef> regenerableHediffDef = [];
-
     public readonly float regenMax = 0.7f;
 
     public readonly float regenMaxPlaceboOffset = 0.1f;
 
     public readonly float regenMaxQualityOffset = 0.15f;
+
+    public readonly List<HediffDef> regenerableHediffDef = [];
 
     public readonly float tendingQualityPlaceboOffset = 0.25f;
 

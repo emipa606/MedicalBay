@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.Sound;
@@ -49,7 +48,7 @@ public class HealingManager
 
     public RegenerationRequest GetFirstRegenRequest()
     {
-        return !HasRegenerationRequest ? null : regenRequests.First();
+        return !HasRegenerationRequest ? null : regenRequests[0];
     }
 
     public void ResetAll()
@@ -126,7 +125,7 @@ public class HealingManager
         }
     }
 
-    private void ReduceWorkAmount(ref int workAmount, List<BodyPartRecord> BprToRegen, Pawn pawn, float maxRegen,
+    private static void ReduceWorkAmount(ref int workAmount, List<BodyPartRecord> BprToRegen, Pawn pawn, float maxRegen,
         bool localDebug = false)
     {
         if (BprToRegen.Count >= 3)

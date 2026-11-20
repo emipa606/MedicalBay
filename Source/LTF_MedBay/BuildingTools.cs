@@ -103,34 +103,37 @@ public static class BuildingTools
         return color;
     }
 
-    public static bool IsWall(this Building building)
+    extension(Building building)
     {
-        return building.def.defName.Contains("Wall");
-    }
+        public bool IsWall()
+        {
+            return building.def.defName.Contains("Wall");
+        }
 
-    public static bool IsVent(this Building building)
-    {
-        return building.def == MyDefs.VentBuildingDef;
-    }
+        public bool IsVent()
+        {
+            return building.def == MyDefs.VentBuildingDef;
+        }
 
-    public static bool IsCooler(this Building building)
-    {
-        return building.def == MyDefs.CoolerBuildingDef;
-    }
+        public bool IsCooler()
+        {
+            return building.def == MyDefs.CoolerBuildingDef;
+        }
 
-    public static bool IsPlaceboWall(this Building building)
-    {
-        return building.IsWall() && building.IsPlacebo();
-    }
+        public bool IsPlaceboWall()
+        {
+            return building.IsWall() && building.IsPlacebo();
+        }
 
-    public static bool IsPlaceboDoor(this Building building)
-    {
-        return building.def.IsDoor && building.IsPlacebo();
-    }
+        public bool IsPlaceboDoor()
+        {
+            return building.def.IsDoor && building.IsPlacebo();
+        }
 
-    public static bool IsPlacebo(this Building building)
-    {
-        return building.def.MadeFromStuff && building.Stuff == MyDefs.MediStoneStuffDef;
+        private bool IsPlacebo()
+        {
+            return building.def.MadeFromStuff && building.Stuff == MyDefs.MediStoneStuffDef;
+        }
     }
 
     public static float AgregatedScore(Room room)

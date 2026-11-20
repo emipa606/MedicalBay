@@ -3,11 +3,11 @@ using Verse;
 
 namespace LTF_MedBay;
 
-public class ITab_MedBay_Utility
+public static class ITab_MedBay_Utility
 {
     public static readonly Vector2 WinSize = new(420f, 610f);
 
-    public static readonly Rect WinScrollable = new(0f, 0f, WinSize.x, WinSize.y);
+    private static readonly Rect WinScrollable = new(0f, 0f, WinSize.x, WinSize.y);
 
     public static readonly Rect WinInnerScrollable = new(0f, 0f, WinScrollable.width - 16f, WinScrollable.height);
 
@@ -286,7 +286,7 @@ public class ITab_MedBay_Utility
         Widgets.EndScrollView();
     }
 
-    public static Rect ComplementaryTextBox(Vector2 winSize, Vector2 iconRect, Vector2 offset)
+    private static Rect ComplementaryTextBox(Vector2 winSize, Vector2 iconRect, Vector2 offset)
     {
         var result = default(Rect);
         result.x = offset.x + iconRect.x;

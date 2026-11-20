@@ -14,13 +14,9 @@ public class Comp_LTF_MedBay : ThingComp
 
     public bool AutomaticTending = true;
 
-    public Building bench;
-
     public MedBayParameters.TargetFaction FactionParams = MedBayParameters.TargetFaction.Regular;
 
     public MedBayParameters.TargetGenre GenreParams = MedBayParameters.TargetGenre.Everybody;
-
-    public bool gfxDebug;
 
     public bool HideAutoSection;
 
@@ -32,6 +28,10 @@ public class Comp_LTF_MedBay : ThingComp
 
     public WaitingRoom MyWaitingRoom;
 
+    public Building bench;
+
+    public bool gfxDebug;
+
     public CompPowerTrader powerComp;
 
     public bool processDebug;
@@ -40,7 +40,9 @@ public class Comp_LTF_MedBay : ThingComp
 
     public CompRefuelable refuelableComp;
 
-    private IEnumerable<Pawn> PotentialPatients => MyWaitingRoom?.TendablePawns.Concat(MyWaitingRoom?.RegenerablePawns);
+    private IEnumerable<Pawn> PotentialPatients => MyWaitingRoom?.RegenerablePawns != null
+        ? MyWaitingRoom?.TendablePawns.Concat(MyWaitingRoom?.RegenerablePawns ?? [])
+        : [];
 
     private int PatientNum => MyWaitingRoom.PotentialPatientCount;
 
@@ -357,11 +359,11 @@ public class Comp_LTF_MedBay : ThingComp
 
         if (HasTendingRequest)
         {
-            foreach (var tendingRequest in tendingRequests)
+            foreach (var tendingRequest in tendingRequests.Select(request => request.WorkRequest))
             {
-                if (tendingRequest.WorkRequest.HasTarget && tendingRequest.WorkRequest.HasProgress)
+                if (tendingRequest.HasTarget && tendingRequest.HasProgress)
                 {
-                    GenDraw.DrawLineBetween(parent.TrueCenter(), tendingRequest.WorkRequest.Patient.TrueCenter(),
+                    GenDraw.DrawLineBetween(parent.TrueCenter(), tendingRequest.Patient.TrueCenter(),
                         SimpleColor.Cyan);
                 }
             }
@@ -372,11 +374,11 @@ public class Comp_LTF_MedBay : ThingComp
             return;
         }
 
-        foreach (var regenRequest in regenRequests)
+        foreach (var regenRequest in regenRequests.Select(request => request.WorkRequest))
         {
-            if (regenRequest.WorkRequest.HasTarget && regenRequest.WorkRequest.HasProgress)
+            if (regenRequest.HasTarget && regenRequest.HasProgress)
             {
-                GenDraw.DrawLineBetween(parent.TrueCenter(), regenRequest.WorkRequest.Patient.TrueCenter(),
+                GenDraw.DrawLineBetween(parent.TrueCenter(), regenRequest.Patient.TrueCenter(),
                     SimpleColor.Green);
             }
         }

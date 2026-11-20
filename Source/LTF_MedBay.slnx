@@ -6,4 +6,43 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="LTF_MedBay/LTF_MedBay.csproj" />
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/ITabs.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Items/">
+    <File Path="../1.7/Defs/ThingDefs_Items/MediFuel.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Items/MediStone.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Items/StuffAppearances.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Misc/">
+    <File Path="../1.7/Defs/ThingDefs_Misc/MediFuelFilth.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/RecipeDefs/">
+    <File Path="../1.7/Defs/RecipeDefs/Recipes_Alternative_medifuel.xml" />
+    <File Path="../1.7/Defs/RecipeDefs/Recipes_Bulk_medifuel.xml" />
+    <File Path="../1.7/Defs/RecipeDefs/Recipes_CreateMediStoneChunk.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ResearchProjectDefs/">
+    <File Path="../1.7/Defs/ResearchProjectDefs/LTF_Medbay_Research.xml" />
+    <File Path="../1.7/Defs/ResearchProjectDefs/LTF_ResearchTabs.xml" />
+  </Folder>
+  <Folder Name="/XML/Patches/">
+    <File Path="../Patches/HospitalBed_FacilityComp_Patch.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/TerrainDefs/">
+    <File Path="../1.7/Defs/TerrainDefs/LTF_MedBay_Floors.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingCategoryDefs/">
+    <File Path="../1.7/Defs/ThingCategoryDefs/ThingCategories.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Buildings/">
+    <File Path="../1.7/Defs/ThingDefs_Buildings/Building_Compressor.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Buildings/Building_MedBay.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/SoundDefs/">
+    <File Path="../1.7/Defs/SoundDefs/RegenSound.xml" />
+  </Folder>
 </Solution>

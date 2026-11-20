@@ -5,7 +5,7 @@ using Verse;
 namespace LTF_MedBay;
 
 [StaticConstructorOnStartup]
-public class GfxTools
+public static class GfxTools
 {
     public static void DrawDot(Vector3 benchPos, Material dotM, Mesh mesh, float x, float z, Thing bench, bool pulse)
     {

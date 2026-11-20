@@ -5,7 +5,7 @@ using Verse;
 
 namespace LTF_MedBay;
 
-public class MedBayGizmo
+public static class MedBayGizmo
 {
     private static void ShowReport(WaitingRoom waitingRoom)
     {
